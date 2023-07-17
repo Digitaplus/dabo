@@ -1,0 +1,233 @@
+@import url();
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+
+@media all and (max-width: 1024px)
+
+header .logo {
+    font-size: 25px;}
+
+header .logo span{
+    color: #20046e;
+}
+
+header .menu a{
+    position: relative;
+    margin: 0 10px;
+    text-decoration: 0;
+    color: #999;
+    transition: 0.5s;
+}
+header .menu a:before{
+    position: absolute;
+    top: -2px;
+    content: " ";
+    width: 0;
+    height: 2px;
+    transition: 0.5s;
+    background-color: #93d6d0;
+}
+header .menu a:hover:before{
+    width: 100%;
+}
+header .menu a:hover {
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.home {
+    height: calc(100vh - 55px);
+    background: url(img1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5%;
+    padding-bottom: 50px;
+}
+.home-infos{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 50px;
+    animation: anime 2s linear
+}
+@keyframes anime{
+    from{
+        transform: translateX(-450px);
+    }
+}
+.home-infos h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.home-infos p{
+    margin-top: 10px;
+margin-bottom: 20px;
+}
+.home-infos a{
+    text-decoration: 0px;
+    border: 2px solid #93d6d0;
+    color: #93d6d0;
+    border-radius: 6px;
+    padding: 5px 20px;
+    margin-top: 5px;
+    font-weight: 400px;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+.home-infos a:hover{
+    background-color: #93d6d0;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.services{
+    padding: 0 10%;
+}
+.title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+.sub-title{
+    text-align: center;
+    color: #93d6d0;
+    margin: 20px 0;
+}
+.list-services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+justify-content: center;
+gap: 20px;
+margin-bottom: 50px;
+}
+.list-services .box{
+    padding: 30px;
+    background-color: #9663da;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.list-services .box h1{
+    text-transform: uppercase;
+    color: #20046e;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.list-services .box p{
+    font-size: 16px;
+}
+.list-services .box:hover{
+background-color: #20046e;
+}
+.banner{
+    height: 70vh;
+    background: url(img22.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.our-goals{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15%;
+    background-color: #20046e;
+    height: 50vh;
+}
+.our-goals .left{
+    width: 45%;
+}
+.our-goals .right{
+    width: 45%;
+}
+.our-goals .left span{
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.our-goals .left h1{
+    font-size: 35px;
+    padding: 15px 0;
+   margin-bottom: 15px; 
+}
+.our-goals .left a{
+    background-color: black;
+    color: #fff;
+    text-decoration: 0;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+.our-goals .right p{
+    letter-spacing: 1px;
+}
+footer{
+    padding: 0 15%;
+}
+footer .title{
+    margin-bottom: 20px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .class-form{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+.contact h4{
+    margin-bottom: 20px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+}
+.contact form input , textarea{
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid rgb(114, 113, 113);
+    resize: none;
+    outline: 0;
+}
+.contact form  button{
+    background-color:#93d6d0 ;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: 0;
+    width: fit-content;
+    margin-top: 5px;
+}
+.address{
+    height: 300px;
+    width: 50%;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.end{
+    background-color:#333 ;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    margin-top: 100px;
+    margin-bottom: 1px;
+}
